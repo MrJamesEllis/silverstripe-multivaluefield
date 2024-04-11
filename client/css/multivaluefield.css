@@ -1,13 +1,52 @@
-ul.multivaluefieldlist { margin: 0px; padding: 0px;}
-.multivaluefieldlist > li { margin-bottom: 4px; min-width: 250px; list-style-type: none; }
+ul.multivaluefieldlist {
+    margin: 0;
+    padding: 0px;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
 
-.multivaluefieldlist > li::after { content: '↕'; cursor: pointer; }
-.multivaluefieldlist > li:last-child { margin-bottom: 0; }
-.mventryfield { max-width: 200px !important; display: inline; }
-/*.mventryfield:not(.has-chzn) { display: inline !important; }*/
+ul.multivaluefieldlist > li {
+    margin: 0;
+    padding:0px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    align-content: stretch;
+    justify-content: space-around;
+    flex: 1;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 8px 6px;
+}
 
-textarea.mventryfield { max-width: none !important; vertical-align: top; }
+ul.multivaluefieldlist > li > .mventryfield {
+    display: block;
+    flex: 6;
+}
 
+ul.multivaluefieldlist > li::after {
+    flex: 0;
+    content: '↕';
+    cursor: ns-resize;
+    display: block;
+    text-align: center;
+    font-size: 24px;
+}
 
-.multivaluefieldlist  .chosen-container { max-width: 90% !important; }
-.field .multivaluefieldlist input.text, .field .multivaluefieldlist select { display: inline; }
+.cms-edit-form ul.multivaluefieldlist > li::after {
+    content: "S";
+    font-family: silverstripe !important;
+    color: #566b8d;
+}
+
+ul.multivaluefieldlist > li > textarea.mventryfield {
+
+}
+
+/*
+.multivaluefieldlist  .chosen-container {
+    max-width: 90% !important;
+}
+*/
