@@ -39,7 +39,3 @@ ul.multivaluefieldlist > li::after {
     font-family: silverstripe !important;
     color: #566b8d;
 }
-
-ul.multivaluefieldlist > li > textarea.mventryfield {
-
-}
