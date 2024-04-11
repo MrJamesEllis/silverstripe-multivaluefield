@@ -44,9 +44,3 @@ ul.multivaluefieldlist > li::after {
 ul.multivaluefieldlist > li > textarea.mventryfield {
 
 }
-
-/*
-.multivaluefieldlist  .chosen-container {
-    max-width: 90% !important;
-}
-*/
